@@ -1,0 +1,87 @@
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<h1>Send Email</h1>
+<!--<%= form_tag :action => 'send_email' %>-->
+<div class="mailbox">
+<p>
+    <label for="email_subject">
+        Subject
+    </label>:<%= text_field 'email', 'subject' %>
+</p>
+<p>
+    <label for="email_recipient">
+        Recipient
+    </label>:<%= text_field 'email', 'recipient' %>
+</p>
+<p>
+    <label for="email_message">
+        Message
+    </label>
+    <br/>
+    <%= text_area 'email', 'message' %>
+</p>
+<input class="send_button" type="button" value="Send Mail" onclick="return send_email();">
+<input class="close_button" type="button" value="Close" onclick="window.close();">
+</div>
+
+<!--<%= submit_tag "Send" %>
+<%=form_tag %>-->
+</div><!-- mailbox div ends here -->
+<script>
+    var page_url = window.opener.parent.location.href;
+    //$('email_message').innerText=page_url;
+    
+    //function which returns a string after trimming it
+    function trim(str){
+        str = str.replace(/^\s+/, '');
+        for (var i = str.length - 1; i >= 0; i--) {
+            if (/\S/.test(str.charAt(i))) {
+                str = str.substring(0, i + 1);
+                break;
+            }
+        }
+        return str;
+    }
+    
+    function email_vaildate(email){
+        emailRe = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*\.(\w{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum))$/
+        if (!emailRe.test(email)) {
+            return false;
+            
+        }
+        else {
+            return true;
+        }
+    }
+    
+    function send_email(){
+        var url = "/send_email";
+        var recipient = $('email_recipient').value;
+        var subject = $('email_subject').value;
+        var email_message = $('email_message').value;
+		if(trim(recipient)==""){
+			alert("Please, enter recipient email address.");
+			return false;
+		}
+		var recipients = new Array();
+		recipients=recipient.split(',');
+		for(var i=0; i<recipients.length; i++){
+			if(!email_vaildate(trim(recipients[i]))){
+				alert("Please, enter valid email address");
+				return false;
+			}
+		}
+		new Ajax.Updater('', url, {
+            asynchronous: false,
+            evalScripts: true,
+            onComplete: function(request){
+                alert("Email sent successfully.");
+            },
+            parameters: {
+                page_url: page_url,
+                recipient: recipient,
+                subject: subject,
+                email_message: email_message
+            }
+        });
+    }
+</script>

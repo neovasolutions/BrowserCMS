@@ -1,0 +1,18 @@
+<h1><%= @content_block.title %></h1>	
+<h3 class="date-title">
+<strong><%= @content_block.author %></strong>|<%= @content_block.date %>
+</h3>
+<div class="article">
+        <div class="article_image">
+	<img src="<%= @content_block.attachment_file_path%>" alt="<%= @content_block.name %>" title="<%= @content_block.name %>"/></p>
+	</div>
+	<div class="text">
+		<%= @content_block.description %>
+	</div>
+</div>
+
+
+
+
+
+

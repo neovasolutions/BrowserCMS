@@ -1,0 +1,7 @@
+
+<%= f.cms_text_field :name %>
+<%= f.cms_date_picker :date %>
+<%= f.cms_file_field :attachment_file, :label => "Image" %>
+<%= f.cms_text_field :title %>
+<%= f.cms_text_field :linkurl %>
+<%= f.cms_text_editor :description %>

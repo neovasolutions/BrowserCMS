@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>The Centre for Global Energy Studies</title>
+
+<link href="/css/main.css" type="text/css" rel="stylesheet" />
+<!--<style type="text/css" media="screen" src="/css/main.css"></style>-->
+
+<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="/css/ie6.css" /><![endif]-->
+
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery.cycle.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+</head>
+<body>
+    <%= cms_toolbar %>
+    <div class="page">
+    
+    
+    	<div class="login-area" id="logarea">
+   			<div class="cont">
+			<div class="left-col">
+   				<h1>Login</h1>
+				<p>Enter the e-mail address and password you use to log in to cges.com. Not an cges.com member yet?<br />
+					<a href="javascript:;" id="regyet" class="bold">Register</a>
+				</p>
+				<p class="blue"><a href="#">FAQ</a> | <a href="#">Privacy Policy</a> | <a href="#">Member Agreement</a></p>
+   			</div>
+			<div class="right-col">
+				<form method="get" action="">
+					<div>
+						<div class="email">
+							<label for="email">E-mail Address</label><input type="text" id="email" />
+						</div>
+						<div class="pwd">
+							<label for="pwd">Password</label><input type="password" id="pwd" />
+						</div>
+						<a href="#" class="password">Forgot Your Password?</a>
+						<div class="remember">
+							<input id="rem" type="checkbox"/>
+							<label for="rem">Remember me on this computer</label>
+						</div>
+						<input type="button" class="log-in marg-left" value="Log-in"/>
+						<input type="button" class="cancel" value="Cancel" />
+					</div>
+				</form>
+			</div>
+			<div class="relax"></div>
+			</div>
+			<div class="login-bottom">
+				<ul id="log">
+   					<li>|</li>
+   					<li class="arrow"><a href="javascript:;"><img src="/images/icons/arrow-up.gif" alt="open" /></a></li>
+   					<li>|</li>
+   					<li class="close"><a href="javascript:;">Close</a></li>
+   					<li>|</li>
+   					<li class="reg"><a href="javascript:;">Register</a></li>
+   					<li class="rss"><a href="#"><img src="/images/icons/rss1.png" alt="rss" /></a></li>
+   				</ul>
+			</div>
+   		</div>
+   		
+   		
+   		<div class="login-area" id="regarea">
+   			<div class="cont">
+			<div class="left-col">
+   				<h1>Register</h1>
+				<p><strong>Benefits of free membership</strong></p>
+				<ul>
+					<li>* Read hundreds of free articles</li>
+					<li>* Receive e-mail newsletters and alerts</li>
+					<li>* Preview exclusive interviews with  some of our top analysts</li>
+				</ul>
+				<p class="blue"><strong>We will not share your email.</strong></p>
+				<p class="blue"><a href="#">FAQ</a> | <a href="#">Privacy Policy</a> | <a href="#">Member Agreement</a></p>
+   			</div>
+			<div class="right-col">
+				<form method="get" action="">
+					<div>
+						<div class="email">
+							<label for="fname">First Name<span>*</span></label><input type="text" id="fname" />
+						</div>
+						<div class="email">
+							<label for="lname">Last Name<span>*</span></label><input type="text" id="lname" />
+						</div>
+						<div class="email">
+							<label for="company">Company<span>*</span></label><input type="text" id="company" />
+						</div>
+						<div class="email">
+							<label for="position">Position<span>*</span></label><select id="position"><option>-- Select Position --</option></select>
+						</div>
+						<div class="email">
+							<label for="country">Country<span>*</span></label><select id="country"><option>-- Select Country --</option></select>
+						</div>
+						<div class="email">
+							<label for="email1">Email<span>*</span></label><input type="text" id="email1" />
+						</div>
+						<div class="email">
+							<label for="pwd1">Password<span>*</span></label><input type="password" id="pwd1" />
+						</div>
+						<div class="email">
+							<label for="pwd2">Confirm Password<span>*</span></label><input type="password" id="pwd2" />
+						</div>
+						<input type="button" class="log-in marg-left" value="Cancel"/>
+						<input type="button" class="cancel" value="Submit" />
+					</div>
+				</form>
+			</div>
+			<div class="relax"></div>
+			</div>
+			<div class="login-bottom">
+				<ul id="reg">
+   					<li>|</li>
+   					<li class="arrow"><a href="javascript:;"><img src="/images/icons/arrow-up.gif" alt="open" /></a></li>
+   					<li>|</li>
+   					<li class="close"><a href="javascript:;">Close</a></li>
+   					<li>|</li>
+   					<li class="log"><a href="javascript:;">Login</a></li>
+   					<li class="rss"><a href="#"><img src="/images/icons/rss1.png" alt="rss" /></a></li>
+   				</ul>
+			</div>
+   		</div>
+   		
+   		
+    	<!-- Header -->
+    	<div class="header">
+    		<div class="logo"><a href="#"><img src="/images/logo.gif" alt="CGES &#8211; Centre for Global Energy Studies" /></a></div>
+    		<div class="login-blue">
+    			<div class="left"><div class="right">
+    				<ul>
+    					<li>|</li>
+    					<li class="arrow" id="arrow"><a href="javascript:;"><img src="/images/icons/arrow-down.gif" alt="open" /></a></li>
+    					<li>|</li>
+    					<li id="login"><a href="javascript:;">Login</a></li>
+    					<li>|</li>
+    					<li id="register"><a href="javascript:;">Register</a></li>
+    					<li class="rss"><a href="#"><img src="/images/icons/rss-icon.jpg" alt="rss" /></a></li>
+    				</ul>
+    			</div></div>
+    		</div>
+    		<div class="main-nav home">
+    			<div class="left"><div class="right">
+                            <%= render_menu %>
+
+
+
+    				<!--<ul>
+    					<li><a href="#">Home</a></li>
+    					<li><a href="#">About Us</a></li>
+    					<li><a href="products.html">Products</a></li>
+   					  <li><a href="#">Services</a></li>
+    					<li><a href="events-page.html">Events</a></li>
+   					  <li><a href="content-page.html">Media</a></li>
+   					  <li><a href="#">Resources</a></li>
+    					<li class="key"><a href="#">Members</a></li>    				
+    				</ul>-->
+    				<div class="search-form">
+    					<form action="#" method="get">
+    						<div>
+    							<input class="input-text" name="search" type="text" value="Search" title="Search" onblur="if(this.value==''){this.value=this.title;}" onfocus="if(this.value==this.title){this.value='';}" />
+    							<input class="input-button" value="submit" type="image" src="/images/buttons/go-button.jpg" alt="GO" />
+    						</div>
+    					</form>
+    				</div>
+    			</div></div>
+    		</div>
+    	</div>
+
+<!-- Content -->
+
+
+    	<div class="content">
+    		<div class="content-center">
+    			<div class="main-content">
+    				<div id="rotator" class="rotator">
+    					
+    				</div><!-- end of rotater -->
+    				<div class="articles-box">
+                                  <%= container :main %>
+    					<!--<div class="column-large">
+    								
+    					</div>--><!-- end of column large -->
+    					<!--<div class="column-small">
+    						
+                                                   <h2><img src="/images/titles/events.gif" alt="Events" /></h2>
+    						<h5>Latest Events</h5>    	
+    						<div class="article">
+								
+								<div class="text">
+                                <a class="image" href="#"><img src="/images/pictures/main-content-img6.jpg" alt="" /></a>
+									<p class="date">12 October 2008</p>
+									<h4><a href="#">Oil price turbulence and its repercussions.</a></h4>
+									<p>27th &amp; 28th November 2008, Pennyhill Park Hotel, Surrey</p>
+									<p class="top-indent">Chaired by HE Sheikh Zaki</p>
+								</div>		
+								<div class="relax">&nbsp;</div>			
+								<a class="more-section" href="#">More Events</a>
+    						</div>
+    						<div class="relax">&nbsp;</div>		
+    						<h2><img src="/images/titles/highlight.gif" alt="Highlight" /></h2>
+    						<div class="article">
+								
+								<div class="text">
+                                <a class="image" href="#"><img src="/images/pictures/main-content-img7.jpg" alt="" /></a>
+									<p class="date">14 November 2008</p>
+									<h4><a href="#">Why baby boomers will need to work longer</a></h4>
+									<p>Most US baby boomers are not prepared for their retirement, and neither are the US and world economies. Boomers can help mitigate the consequences by remaining in the workforce beyond the traditional retirement age.</p>
+								</div>		
+    						</div>
+    						<div class="relax">&nbsp;</div>
+    						<h2><img src="/images/titles/interviews.gif" alt="Interviews" /></h2>
+    						<h5>Julian Lee &#8211; Senior Energy Analyst</h5>    	
+    						<div class="article">
+								
+								<div class="text">
+                                <a class="image" href="#"><img src="/images/pictures/main-content-img8.jpg" alt="" /></a>
+									<p class="date">13 October 2008</p>
+									<h4><a href="#">From risk to opportunity &#8212; How global executives view sociopolitical issues:</a></h4>
+								</div>		
+								<div class="relax">&nbsp;</div>			
+								<a class="more-section" href="#">More Interviews</a>
+    						</div>
+    						<div class="relax">&nbsp;</div>		
+    						<h2><img src="/images/titles/quote-of-the-day.gif" alt="Quote of the Day" /></h2>
+    						<div class="article">
+								
+								<div class="text">
+                                <a class="image" href="#"><img src="/images/pictures/main-content-img9.jpg" alt="" /></a>
+									<p class="date">16 November 2008</p>
+									<h4><a href="#">Why baby boomers will need to work longer</a></h4>
+									<p>Most US baby boomers are not prepared for their retirement, and neither are the US and world economies. Boomers can help mitigate the consequences by remaining in the workforce beyond the traditional retirement age.</p>
+								</div>		
+    						</div>
+-->
+    					</div><!-- end of column small -->
+    				</div><!-- end of articles-box -->
+    			</div><!-- end of main content -->
+    			<div class="side-content">
+    				<div class="top"><div class="bottom">
+    					<!--<h2><img src="/images/titles/for-free-membership.gif" alt="For Free Membership" /></h2>-->
+    				
+    					<h2><img src="/images/titles/latest-products.gif" alt="Latest Products" /></h2>
+    					<h3><a href="#">Oil Product Price Report</a></h3>
+    					<a class="image" href="#"><img src="/images/pictures/products-img1.jpg" alt="" /></a>
+    					<div class="text">
+    						<p>The Oil Product Price Report is a monthly publication created especially for you market participants who need reliable forecasts of oil product prices, along with </p>
+   					  </div>
+    					<div class="relax">&nbsp;</div>
+    					<h3><a href="#">The Oil Price Shock and Oil Demand</a></h3>
+    					<a class="image" href="#"><img src="/images/pictures/products-img2.jpg" alt="" /></a>
+    					<div class="text">
+    						<p>Strong oil demand has helped put oil prices on a rising path. Understanding what drives oil demand is therefore of the utmost importance in determining where oil demand and </p>
+   					  </div>
+    					<div class="relax">&nbsp;</div>
+    					<h3><a href="#">Upstream costs and the price of oil</a></h3>
+    					<a class="image" href="#"><img src="/images/pictures/products-img3.jpg" alt="" /></a>
+    					<div class="text">
+    						<p>Oil costs are regarded by many commentators as the principal reason for the surge in oil prices seen over the last few years. The CGES study Upstream costs and the </p>
+   					  </div>
+    					<div class="relax">&nbsp;</div>
+    					<h3><a href="#">The Future of Caspian Oil Exports</a></h3>
+    					<a class="image" href="#"><img src="/images/pictures/products-img4.jpg" alt="" /></a>
+    					<div class="text">
+    						<p>Oil costs are regarded by many commentators as the principal reason for the surge in oil prices seen over the last few years. The CGES study Upstream costs and the </p>
+   					  </div>
+    					<div class="relax">&nbsp;</div>
+    					<h3><a href="#">The Future of Caspian Oil Exports</a></h3>
+    					<a class="image" href="#"><img src="/images/pictures/products-img5.jpg" alt="" /></a>
+    					<div class="text">
+    						<p>Oil costs are regarded by many commentators as the principal reason for the surge in oil prices seen over the last few years. The CGES study Upstream costs and the </p>
+   					  </div>
+                      <div class="relax">&nbsp;</div>
+    					<h3><a href="#">The Future of Caspian Oil Exports</a></h3>
+    					<a class="image" href="#"><img src="/images/pictures/products-img5.jpg" alt="" /></a>
+    					<div class="text">
+    						<p>Oil costs are regarded by many commentators as the principal reason for the surge in oil prices seen over the last few years. The CGES study Upstream costs and the </p>
+   					  </div>
+                      <div class="relax">&nbsp;</div>
+    					<h3><a href="#">The Future of Caspian Oil Exports</a></h3>
+    					<a class="image" href="#"><img src="/images/pictures/products-img5.jpg" alt="" /></a>
+    					<div class="text">
+    						<p>Oil costs are regarded by many commentators as the principal reason for the surge in oil prices seen over the last few years. The CGES study Upstream costs and the </p>
+   					  </div>
+                      
+    				</div></div>
+    			</div><!-- end of side content -->
+    			<div class="relax">&nbsp;</div>
+    		</div><!-- end of content center -->
+    		<div class="content-bottom"></div>
+    	</div><!-- end of content -->
+    	
+    </div><!-- end of page class -->
+    
+
+
+
+
+
+<!-- Footer -->
+	<div class="footer">
+		<div class="page">
+			<h4>Some of Our Clients</h4>
+			<ul class="logos">
+				<li><a href="#"><img src="/images/pictures/footer-logo1.gif" alt="ING" /></a></li>
+				<li><a href="#"><img src="/images/pictures/footer-logo2.gif" alt="" /></a></li>
+				<li><a href="#"><img src="/images/pictures/footer-logo3.gif" alt="Chevron" /></a></li>
+				<li><a href="#"><img src="/images/pictures/footer-logo4.gif" alt="PETRO&#8211;CANADA" /></a></li>
+				<li><a href="#"><img src="/images/pictures/footer-logo5.gif" alt="Eni" /></a></li>
+				<li><a href="#"><img src="/images/pictures/footer-logo6.gif" alt="HSBC" /></a></li>
+				<li><a href="#"><img src="/images/pictures/footer-logo7.gif" alt="" /></a></li>
+				<li><a href="#"><img src="/images/pictures/footer-logo8.gif" alt="GASPROM" /></a></li>
+				<li><a href="#"><img src="/images/pictures/footer-logo9.gif" alt="CANADA" /></a></li>
+			</ul>
+			<p>&copy; 2009 The Centre for Global Energy Studies &#8211; The Centre's main objective is to provide independent and objective information and analysis on the key energy issues of the day. The Centre specialisation include oil market forecasting, OPEC policy, strategic hedging and the politics and economics of the main oil producing regions.</p>
+			<!-- commented here
+                       <ul class="footer-nav">
+				<li><a href="#">Home</a></li>
+				<li>&#8226;</li>
+				<li><a href="#">Products</a></li>
+				<li>&#8226;</li>
+				<li><a href="#">Services</a></li>
+				<li>&#8226;</li>
+				<li><a href="#">News</a></li>
+				<li>&#8226;</li>
+				<li><a href="#">Resources</a></li>
+				<li>&#8226;</li>
+				<li><a href="#">Events</a></li>
+				<li>&#8226;</li>
+				<li><a href="#">Support</a></li>
+				<li>&#8226;</li>
+				<li><a href="#">About Us</a></li>
+			</ul> -->
+		</div>
+	</div><!-- footer class ends -->
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+BODY { 
+	behavior: url("./public/css/csshover.htc");	
+}
+.login-area .cont{
+	background:none;
+	filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./public/images/bg/login-right-sh.png', sizingMethod="scale");
+}
+.login-area .login-bottom{
+	background:none;
+	filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./public/images/bg/login-bot.png');
+}
+#userarea .login-bottom{
+	background:none;
+	filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./public/images/bg/login-sbot.png');
+}
+
+.login-area UL {
+	margin-right:11px;
+}
+.login-area UL LI.rss img{
+	height:1px;
+	width:1px;
+	filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./public/images/icons/rss1.png');
+}

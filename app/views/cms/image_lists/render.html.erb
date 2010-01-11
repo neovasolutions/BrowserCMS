@@ -1,0 +1,30 @@
+<div class="image-frame">
+    	<div class="container">
+    	     <div class="top"><div class="bottom" >
+    		<div id="slideShow1" >
+			<%
+				attachments=ImageList.find_images(@content_block.ImageName1, @content_block.ImageName2, @content_block.ImageName3, @content_block.ImageName4)
+				j=0
+				for attachment in attachments
+				j+=1
+			%>
+				<div>
+				 <img src="<%=attachment.file_path%>" alt="" />
+					<%if j==1%>
+						<p> <%= @content_block.description1 %></p>
+					<%elsif j==2%>
+						<p> <%= @content_block.description2 %></p>	
+					<%elsif j==3%>
+						<p> <%= @content_block.description3 %></p>	
+					<%elsif j==4%>
+						<p> <%= @content_block.description4 %></p>	
+					<%end%>
+				
+				</div>
+			<%end%>
+		</div>
+		</div></div>
+	    	</div>
+    	<div class="relax">&nbsp;</div>
+</div>
+

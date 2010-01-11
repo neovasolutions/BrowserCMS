@@ -1,0 +1,12 @@
+<link href="/css/main.css" type="text/css" rel="stylesheet" />
+	<script>
+		function addContentToPage(){
+			$('main-content').innerHTML=window.opener.document.getElementById('main-content').innerHTML;
+			if ($('rotator')) {
+				$('rotator').style.display = 'none';
+			}
+		}
+	</script>
+	<body onload="addContentToPage();">
+		<div id="main-content" class="main-content"></div>
+	</body>

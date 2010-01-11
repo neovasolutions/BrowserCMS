@@ -1,0 +1,30 @@
+<!--
+<p><b>Name:</b> <%= @content_block.name %></p>
+<p><b>Date:</b> <%= @content_block.date %></p>
+<p><b>Attachment:</b> <%= link_to @content_block.attachment_file_path, @content_block.attachment_link %></p>
+<img src="<%= @content_block.attachment_file_path%>" alt="@content_block.name" title="@content_block.name" />
+<p><b>Title:</b> <%= @content_block.title %></p>
+<p><b>Description:</b> <%= @content_block.description %></p>
+-->
+
+<!--
+<img src="<%= @content_block.attachment_file_path%>" alt="@content_block.name" title="@content_block.name" />
+<%= @content_block.date %></p>
+<p><%= @content_block.title %></p>
+<p><%= @content_block.description %></p>
+-->
+
+<div class="article">
+    <a class="image" href="<%= @content_block.linkurl%>"> 
+                <img src="<%= @content_block.attachment_file_path%>" alt="<%= @content_block.name %>" title="<%= @content_block.title %>"/>
+    </a> 
+    
+    <div class="text">
+    <p class="date"><%= @content_block.date %> 
+    </p>
+    <h4>
+         <a href="<%= @content_block.linkurl%>" ><%= @content_block.title %></a>
+    </h4>
+    <p><%= @content_block.description %></p>
+    </div>
+</div>

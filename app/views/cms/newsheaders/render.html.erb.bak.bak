@@ -1,0 +1,3 @@
+
+<p><b>Name:</b> <%= @content_block.name %></p>
+<p><b>Attachment:</b> <%= link_to @content_block.attachment_file_path, @content_block.attachment_link %></p>

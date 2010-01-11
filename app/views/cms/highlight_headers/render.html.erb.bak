@@ -1,0 +1,3 @@
+<h2><img src="<%= @content_block.attachment_file_path%>" alt="<%= @content_block.name %>" title="<%= @content_block.name %>"/></h2>
+
+	

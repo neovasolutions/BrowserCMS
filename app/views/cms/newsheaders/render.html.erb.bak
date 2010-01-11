@@ -1,0 +1,9 @@
+<!--
+<p><b>Name:</b> <%= @content_block.name %></p>
+<p><b>Attachment:</b> <%= link_to @content_block.attachment_file_path, @content_block.attachment_link %></p>
+<img src="<%= @content_block.attachment_file_path%>" />
+-->
+
+
+<img src="<%= @content_block.attachment_file_path%>" alt="<%= @content_block.name %>" title="<%= @content_block.name %>"/>
+
